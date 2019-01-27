@@ -1,0 +1,27 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+group 'com.gmail.maxym.soroka'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //libs
+    compile group: 'org.json', name: 'json', version: '20180813'
+    compile "commons-lang:commons-lang:2.6"
+
+    //tests
+    testCompile group: 'org.testng', name: 'testng', version: '6.14.3'
+}
